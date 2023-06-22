@@ -1,0 +1,65 @@
+:root {
+  --color_primary: #ff2d37;
+  --color_secondary: #03103b;
+  --color_white: #fff;
+}
+
+/* Header */
+header {
+  margin: 0;
+  padding: 0.93rem 6.25rem;
+  background: var(--color_primary);
+  color: var(--color_white);
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.header_wrapper .header_phrase p {
+  font-weight: bold;
+}
+
+.header_wrapper .header_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 0.625rem;
+}
+
+.header_wrapper .header_items a {
+  color: var(--color_white);
+  transition: all 0.1s ease-in;
+}
+
+.header_wrapper .header_items a:hover {
+  color: var(--color_secondary);
+}
+/* /Header */
+
+/* Responsive */
+/* Break points utilizados:
+    ->  Mobile: 320px - 480px
+    ->  Tablets: 481px - 768px
+    ->  Laptops: 769px - 1024px
+    ->  Desktop: 1025px - 1200px
+*/
+
+/* Desktop and Laptops */
+@media screen and (max-width: 1024px) {
+  .header_wrapper {
+    font-size: 0.625rem;
+  }
+}
+
+/* Tablets and Mobile */
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+}
+
+/* /Responsive */
